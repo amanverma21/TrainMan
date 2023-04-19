@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+main,
+.app {
+  height: 100vh;
+  width: 100vw;
+}
+
+.loginpage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav-edit {
+  height: 60px;
+  width: 100vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.nav-edit div {
+  height: 60px;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-edit .nav-menu button {
+  height: 40px;
+  width: 100px;
+}
+
+.loginpage .login-comp {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginpage .login-comp .login-form {
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 0 1rem;
+}
+
+.loginpage .login-comp .login-form .login-input {
+  width: 100%;
+}
+
+.loginpage .login-comp .login-form button {
+  width: 200px;
+
+}
+
+.loginpage .login-comp .login-form h6 a {
+
+  text-decoration: none;
+}
+
+.drawer {
+  padding: 0;
+}
+
+.drawer-list {
+  width: 100%;
+  margin: 0;
+}
+
+.homepage {
+  width: 100vw;
+  height: fit-content;
+}
+
+.userDetailDiv {
+  height: fit-content;
+}
+
+.userDetails {
+  height: 450px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+}
+
+.userDetails .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.userDetails .train-image {
+  background-image: url('./assets/train.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.userDetails .details p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.userDetails .details p .fields {
+  width: 30%;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.userDetails .details p .values {
+  font-size: 1rem;
+  width: 70%;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #ecf0f1;
+  border-radius: 3px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.ticketspage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.ticketspage .ticketsDiv {
+  height: fit-content;
+  /* background-color: antiquewhite; */
+}
+
+.general-info {
+  font-size: 1.1rem;
+  height: fit-content;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  /* background-color: #222f3e; */
+}
+
+.singleTicketDiv {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 10px;
+  border-radius: 5px;
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ticketpage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.trainDetailsDiv p {
+  font-size: 0.8rem;
+}
+
+.bookTicketPage {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.bookingDiv {
+  height: fit-content;
+  width: 100vw;
+  padding: 30px 0;
+}
+
+.bookingDiv form {
+  height: fit-content;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin: auto;
+}
+
+.aboutpage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.aboutdiv {
+  height: fit-content;
+}
+
+.aboutdiv p {
+  text-align: justify;
+}
+
+.aboutdiv ul li {
+  list-style: decimal;
+  text-align: justify;
+}
+
+.contactpage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.contactDiv button {
+  font-size: 1.8rem;
+}
+
+.contactSocialDiv {
+  height: fit-content;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.contactSocialDiv button {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width:992px) {
+  .userDetails {
+    height: calc(80vh - 60px);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .userDetails .details {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .userDetails .train-image {
+    height: 100%;
+    padding: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+@media (max-width:767px) {
+  .contactDiv button {
+    font-size: 1rem;
+  }
+
+  .contactSocialDiv {
+    box-shadow: none;
+  }
+
+  .contactSocialDiv button {
+    border: 1px solid #95999a;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width:550px) {
+  .loginpage .login-comp .login-form {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .userDetails {
+    height: 700px;
+  }
+
+  .userDetails .details p {
+    flex-direction: column;
+  }
+
+  .userDetails .details p .values {
+    width: 100%;
+  }
+
+  .bookingDiv form {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+@media (min-height:1024px) {
+  .homepage{
+    position: relative;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .bookingDiv form {
+    height: 50vh;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .ticketDiv {
+    height: 50vh;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .userDetailDiv {
+    height: 100vh;
+  }
+}
