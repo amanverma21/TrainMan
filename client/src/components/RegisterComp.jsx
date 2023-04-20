@@ -20,6 +20,7 @@ const RegisterComp = () => {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [pass, setPass] = useState('');
+    
     const [confirmPass, setConfirmPass] = useState('');
     const [error, setError] = useState(false);
     const [success, setsuccess] = useState(false);

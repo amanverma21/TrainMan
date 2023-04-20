@@ -69,8 +69,7 @@ const Home = () => {
                             <p><span className='fields'>Name:</span> <span className='values'>{userData.name}</span></p>
                             <p><span className='fields'>Phone:</span> <span className='values'>{userData.phone}</span></p>
                             <p><span className='fields'>Email:</span> <span className='values'>{userData.email}</span></p>
-                            <p><span className='fields'>Gender:</span> <span className='values'>{userData.email}</span></p>
-                            <p><span className='fields'>Status:</span> <span className='values'>{userData.email}</span></p>
+                            <p><span className='fields'>Gender:</span> <span className='values'>{userData.gender}</span></p>
                             <p><span className='fields'>Occupation:</span> <span className='values'>{userData.email}</span></p>
                         </div>
                         <div className='train-image'></div>
