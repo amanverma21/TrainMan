@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x:visible; */
+  /* overflow-y:auto;  */
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 
 body,
@@ -108,8 +113,18 @@ main,
   border-bottom-left-radius: 5px;
 }
 
-.userDetails .train-image {
+.userDetails .train-image{
   background-image: url('./assets/train.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.promo-image{
+  background-image: url('./assets/promo.png');
+  /* width: 20px; */
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

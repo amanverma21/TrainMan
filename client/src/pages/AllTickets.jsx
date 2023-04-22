@@ -53,10 +53,10 @@ const AllTickets = () => {
             <Navbar />
             <ThemeProvider theme={theme}>
                 <div className='container py-3 ticketsDiv'>
-                    <h3 className='text-center'>Your IRCTC Reservations</h3>
+                    <h3 className='text-center'>Your Reservations</h3>
                     <Links />
                     <p className='bg-dark general-info'>
-                        Here you can see all your previously confirmed reservations with IRCTC<br />
+                        Here you can see all your previously confirmed reservations with Trainman<br />
                         Click on any ticket to know more about it.
                     </p>
                     <div className='row ticketDiv'>

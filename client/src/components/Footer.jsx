@@ -2,7 +2,7 @@ import { Button, TextField } from '@mui/material'
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import CallIcon from '@mui/icons-material/Call';
 const Footer = () => {
     const navigate = useNavigate();
     const externalLinks = (name) => {
@@ -21,10 +21,8 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-4 col-12 text-center my-3">
                         <h3 className='text-light'>TrainMan</h3>
-                        <h6 style={{ color: "#5D5E61" }}>Team Aalsi</h6>
-                        <div className="d-flex justify-content-around mt-4">
-                            <Button variant='outlined' color='error' onClick={() => { externalLinks("github") }}><GitHubIcon /></Button>
-                            <Button variant='outlined' color='error' onClick={() => { externalLinks("github") }}><GitHubIcon /></Button>
+                        <h6 style={{ color: "#5D5E61" }}>UI20EC10 & UI20EC12</h6>
+                        <div className="d-flex justify-content-around mt-4" class="d-flex justify-content-center">
                         </div>
                     </div>
                     <div className="col-md-4 col-12 text-center my-3">

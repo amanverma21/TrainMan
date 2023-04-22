@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
+import Navbar1 from '../components/Navbar1'
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -19,7 +20,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal';
 import Links from '../components/Links';
 import Footer from '../components/Footer';
-
+// const today = new Date();
+// console.log(minDate);
 const theme = createTheme({
     palette: {
         primary: {
@@ -283,11 +285,12 @@ const NewTicket = () => {
                             </FormControl>
                             <FormControl fullWidth>
                                 <LocalizationProvider dateAdapter={AdapterDayjs}>
-                                    <DatePicker value={date} onChange={(newValue) => setDate(newValue)} />
+                                    <DatePicker value={date} disablePast onChange={(newValue) => setDate(newValue)} />
                                 </LocalizationProvider>
                             </FormControl>
                             <TextField id="mobileNo" fullWidth label="Mobile No." variant="outlined" className='my-2' />
                             <TextField id="name" fullWidth label="Passenger Name" variant="outlined" className='my-2' />
+                            
                             <FormControl>
                                 <FormLabel id="genderGroup">Gender</FormLabel>
                                 <RadioGroup
@@ -311,7 +314,7 @@ const NewTicket = () => {
                                 valueLabelDisplay="auto"
                                 step={1}
                                 marks
-                                min={18}
+                                min={1}
                                 max={90}
                             />
                             <Button variant='contained' sx={{ display: "block", margin: "auto" }} type="submit">Book Ticket</Button>
