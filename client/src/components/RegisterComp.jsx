@@ -20,6 +20,7 @@ const RegisterComp = () => {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [pass, setPass] = useState('');
+    const [gender, setgender] = useState('');
     
     const [confirmPass, setConfirmPass] = useState('');
     const [error, setError] = useState(false);
@@ -49,7 +50,7 @@ const RegisterComp = () => {
         else {
             const response = await fetch(`${address}/signup`, {
                 method: "POST",
-                body: JSON.stringify({ name, email, phone, pass, confirm_pass: confirmPass }),
+                body: JSON.stringify({ name, email, phone, pass, gender ,confirm_pass: confirmPass }),
                 headers: { "Content-Type": "application/json" },
             });
             const data = await response.json();
@@ -72,6 +73,7 @@ const RegisterComp = () => {
                     <TextField label="Email" type='email' value={email} onChange={e => setEmail(e.target.value)} variant="outlined" className='login-input' />
                     <TextField label="Phone" type='text' value={phone} onChange={e => setPhone(e.target.value)} variant="outlined" className='login-input' />
                     <TextField label="Password" type='password' value={pass} onChange={e => setPass(e.target.value)} variant="outlined" className='login-input' />
+                    <TextField label="Gender" type='text' value={gender} onChange={e => setgender(e.target.value)} variant="outlined" className='login-input' />
                     <TextField label="Confirm Password" type='password' value={confirmPass} onChange={e => setConfirmPass(e.target.value)} variant="outlined" className='login-input' />
                     <Button variant='contained' type='submit'>Signup</Button>
                     <Typography variant='h6'>Already have an account? <Link to='/' style={{ color: '#eb4d4b' }}>Login</Link></Typography>
