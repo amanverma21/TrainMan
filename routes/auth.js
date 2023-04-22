@@ -6,8 +6,8 @@ const authenticate = require('../middleware/authenticate');
 
 /* Registration */
 router.post('/signup', async (req, res) => {
-    const { name, email, phone, pass, confirm_pass } = req.body;
-    if (!name || !email || !phone || !pass || !confirm_pass) {
+    const { name, email, phone, pass,gender,confirm_pass } = req.body;
+    if (!name || !email || !phone || !pass || !gender || !confirm_pass) {
         res.status(422).json({ error: "Fill it properly" });
     }
     try {
@@ -20,7 +20,7 @@ router.post('/signup', async (req, res) => {
             res.status(422).json({ error: "Password and Confirm Password should match!" });
         }
         else {
-            const user = new User({ name: name, email: email, phone: phone, pass: pass, confirm_pass: confirm_pass });
+            const user = new User({ name: name, email: email, phone: phone, pass: pass, gender:gender,confirm_pass: confirm_pass });
             await user.save();
             res.status(201).json({ message: "Registration Successful!" });
         }
