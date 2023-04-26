@@ -100,7 +100,7 @@ const NewTicket = () => {
                 setTrainAvailable(true);
             }
             else if (source === "Delhi" && destination === "Patna") {
-                trainValue = "13637 HWH Duronto Exp.";
+                trainValue = "13637 Duronto Exp.";
                 setTrainName(trainValue);
                 setDepartureTimeValue("07:24");
                 setArrivalTime("15:53");
