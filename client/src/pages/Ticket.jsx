@@ -5,7 +5,7 @@ import TrainIcon from '@mui/icons-material/Train';
 
 const Ticket = () => {
     const navigate = useNavigate();
-    const [userData, setUserData] = useState({});
+    const [userData, setUserData] = useState({}); 
     const { id } = useParams();
     let data;
 

@@ -4,7 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from '@mui/icons-material/Menu'; 
 import { Link, useNavigate } from 'react-router-dom';
 import { ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import LogoutIcon from '@mui/icons-material/Logout';

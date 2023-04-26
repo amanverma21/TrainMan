@@ -7,7 +7,7 @@ const Logout = () => {
 
     const { state, dispatch } = useContext(userContext);
 
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         fetch(`${address}/logout`, {
