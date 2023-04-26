@@ -90,7 +90,7 @@ const NewTicket = () => {
             setTrainAvailable(false);
         }
         else if (source !== destination) {
-            if (source === "Delhi" && destination === "Sealdah") {
+            if (source === "Delhi" && destination === "Lucknow") {
                 trainValue = "15280 Netaji Exp.";
                 setTrainName(trainValue);
                 setDepartureTimeValue("14:07");
@@ -99,7 +99,7 @@ const NewTicket = () => {
                 setGatewayCharge(30);
                 setTrainAvailable(true);
             }
-            else if (source === "Delhi" && destination === "Howrah") {
+            else if (source === "Delhi" && destination === "Patna") {
                 trainValue = "13637 HWH Duronto Exp.";
                 setTrainName(trainValue);
                 setDepartureTimeValue("07:24");
@@ -108,7 +108,7 @@ const NewTicket = () => {
                 setGatewayCharge(30);
                 setTrainAvailable(true);
             }
-            else if (source === "Sealdah" && destination === "Delhi") {
+            else if (source === "Lucknow" && destination === "Delhi") {
                 trainValue = "12098 Poorva Express";
                 setTrainName(trainValue);
                 setDepartureTimeValue("11:48");
@@ -117,11 +117,11 @@ const NewTicket = () => {
                 setGatewayCharge(30);
                 setTrainAvailable(true);
             }
-            else if (source === "Sealdah" && destination === "Howrah") {
+            else if (source === "Lucknow" && destination === "Patna") {
                 trainValue = "No Train Available";
                 setTrainAvailable(false);
             }
-            else if (source === "Howrah" && destination === "Sealdah") {
+            else if (source === "Patna" && destination === "Lucknow") {
                 trainValue = "No Train Available";
                 setTrainAvailable(false);
             }
@@ -224,8 +224,8 @@ const NewTicket = () => {
                                 onChange={sourceChange}
                             >
                                 <MenuItem value="Delhi">Delhi</MenuItem>
-                                <MenuItem value="Howrah">Howrah</MenuItem>
-                                <MenuItem value="Sealdah">Sealdah</MenuItem>
+                                <MenuItem value="Patna">Patna</MenuItem>
+                                <MenuItem value="Lucknow">Lucknow</MenuItem>
                             </Select>
                         </FormControl>
                         <FormControl fullWidth sx={{ margin: "10px 0" }}>
@@ -238,8 +238,8 @@ const NewTicket = () => {
                                 onChange={destinationChange}
                             >
                                 <MenuItem value="Delhi">Delhi</MenuItem>
-                                <MenuItem value="Howrah">Howrah</MenuItem>
-                                <MenuItem value="Sealdah">Sealdah</MenuItem>
+                                <MenuItem value="Patna">Patna</MenuItem>
+                                <MenuItem value="Lucknow">Lucknow</MenuItem>
                             </Select>
                         </FormControl>
                         <Button variant='contained' sx={{ display: "block", margin: "auto" }} onClick={checkTrain}>Check Trains</Button>

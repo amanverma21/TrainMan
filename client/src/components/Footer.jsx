@@ -7,11 +7,11 @@ const Footer = () => {
     const navigate = useNavigate();
     const externalLinks = (name) => {
         if (name === "mail")
-            window.location.href = "mailto:adhikarysayandip@gmail.com";
+            window.location.href = "mailto:averma2k19@gmail.com";
         
         
         else if (name === "github")
-            window.location.href = "https://github.com/Sayandip0408";
+            window.location.href = "https://github.com/amanverma21/TrainMan";
         
         else navigate('/contact');
     }
