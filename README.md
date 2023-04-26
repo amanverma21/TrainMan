@@ -12,7 +12,7 @@ Customer Support: Users can reach out for customer support through a contact for
 
 # Technologies Used
 MongoDB<br />
-Express<br /><br />
+Express<br />
 React<br />
 Node.js<br />
 
